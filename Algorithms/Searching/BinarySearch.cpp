@@ -1,3 +1,4 @@
+//array must be sorted for this to work . time complexity O(logN)
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;

@@ -17,10 +17,10 @@ void printArr1(int arr[],int size){
     }
     
 }
-void printArr2(int arr,int size){
-    for (int i = 0; i < size; i++)
+void printArr2(int arr[10]){
+    for (int i = 0; i < 10; i++)
     {
-        cout<<arr+i;
+        cout<<arr[i];
     }
 }
 int main(){
@@ -39,6 +39,6 @@ int main(){
 
     int size=sizeof(arr)/sizeof(arr[0]); //getting the size of array
     printArr1(arr2,4);
-    printArr2(*arr,size);//*arr is the value present at arr[0] and arr,&arr are the address of arr[0]
+    printArr2(arr);//*arr is the value present at arr[0] and arr,&arr are the address of arr[0]
 return 0;
 }
